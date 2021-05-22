@@ -1,1 +1,32 @@
 /* Стилизация аккордеона */
+
+details{
+    display:block;
+    background: #fff;
+    width: 730px;
+    height: 72px;
+    border: 1px solid #ACB5BD;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.text1{
+    font-family: Inter;
+    color: #495057;
+    margin: 0 0 32px 32px;
+}
+
+details[open]{
+    height: 144px;
+}
+summary{
+    color: rgb(0, 0, 0);
+padding:24px 32px 16px;
+}
+main{
+    max-width: 1440px;
+    max-height: 495px;
+}
