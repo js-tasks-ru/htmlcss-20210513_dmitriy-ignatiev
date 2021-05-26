@@ -1,12 +1,13 @@
 /* Стилизация кнопки */
-.button_primary{
+.button_all{
     height: 48px;
-width: 189px;
-left: 0px;
-top: 0px;
-border-radius: 8px;
-background-color:#4263EB ;
-padding: 0;
+    width: 189px;
+    border-radius: 8px;
+    padding: 0;
+}
+.button_primary{
+
+background-color:var(--blue) ;
 border-width: 0;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -19,13 +20,8 @@ cursor: pointer;
 transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button_secondary{
-height: 48px;
-width: 189px;
-left: 0px;
-top: 0px;
-border-radius: 8px;
-background: #7048E8;
-padding: 0;
+
+background: var(--purple);
 border-width: 0;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
@@ -39,14 +35,9 @@ transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_alternate{
-height: 48px;
-width: 189px;
-left: 0px;
-top: 0px;
 border: 1px solid #ACB5BD;
 box-sizing: border-box;
-border-radius: 8px;
-background-color: white;
+background-color:var(--white);
 font-family:'Roboto', sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -58,11 +49,11 @@ cursor: pointer;
 transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 .button_primary:hover{
-    background: #2342C0;
+    background: var(--blue-1);
     border-radius: 8px;
 }
 .button_secondary:hover{
-    background: #5028C6;
+    background:var(--purple-1) ;
     border-radius: 8px;
 }
 .button_alternate:hover{
@@ -70,8 +61,8 @@ transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     box-sizing: border-box;
     border-radius: 8px;
 }
-.button_primary:disabled{
-    background: #4263EB;
+.button_primary[disabled]{
+    background: var(--blue);
     opacity: 0.5;
     border-radius: 8px;
     cursor:default ;
@@ -84,8 +75,8 @@ transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     color: #FFFFFF;
     opacity: 0.5;
 }
-.button_secondary:disabled{
-    background: #7048E8;
+.button_secondary[disabled]{
+    background:var(--purple);
     opacity: 0.5;
     border-radius: 8px;
     cursor: default;
@@ -98,7 +89,7 @@ transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     color: #FFFFFF;
     opacity: 0.5;
 }
-.button_alternate:disabled{
+.button_alternate[disabled]{
     border: 1px solid #ACB5BD;
     box-sizing: border-box;
     border-radius: 8px;

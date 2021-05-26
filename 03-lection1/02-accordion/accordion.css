@@ -1,8 +1,7 @@
 /* Стилизация аккордеона */
-
-details{
+.accordion{
     display:block;
-    background: #fff;
+    background:var(--white);
     width: 730px;
     height: 72px;
     border: 1px solid #ACB5BD;
@@ -15,18 +14,15 @@ details{
 
 .text1{
     font-family: Inter;
-    color: #495057;
+    color: var(--gray);
     margin: 0 0 32px 32px;
 }
 
 details[open]{
     height: 144px;
 }
-summary{
-    color: rgb(0, 0, 0);
+.summary_accordion{
+    color: var(--black);
 padding:24px 32px 16px;
 }
-main{
-    max-width: 1440px;
-    max-height: 495px;
-}
+
